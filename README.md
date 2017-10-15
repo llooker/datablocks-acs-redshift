@@ -51,7 +51,7 @@ You can copy the policy directly from here:
 Run the following [`create table`](http://docs.aws.amazon.com/redshift/latest/dg/r_CREATE_TABLE_NEW.html) commands in Redshift.
 
 ```
-CREATE TABLE looker_datablocks.zcta_distances(
+CREATE TABLE zcta_distances(
    zip1        INTEGER  PRIMARY KEY
   ,zip2        INTEGER
   ,mi_to_zcta5 NUMERIC(16,13)
