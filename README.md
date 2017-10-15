@@ -223,7 +223,7 @@ CSV;
 
 ### Step 4: Add LookML Files to your Looker Project
 
-
+Copy the LookML files from this repo [(or download here)](https://github.com/llooker/datablocks-acs-redshift/archive/master.zip)
 
 
 
