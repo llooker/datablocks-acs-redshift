@@ -231,6 +231,7 @@ CSV;
 
 
 Now you're ready to explore ACS data and combine with your other datasets!
+![looker](looker_acs.png)
 
 
 
