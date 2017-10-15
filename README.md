@@ -11,4 +11,4 @@ CREATE TABLE zcta_distances(
 
 
 
-![iam](Screen Shot 2017-10-13 at 4.01.43 PM)
+![iam](aws_add_user.png)
