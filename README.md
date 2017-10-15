@@ -181,7 +181,7 @@ CREATE TABLE block_group_attribs(
 
 ### Step 3: Copy Data to Redshift from Looker's S3 Bucket
 
-Run the following [`copy`](http://docs.aws.amazon.com/redshift/latest/dg/copy-parameters-data-source-s3.html) commands in Redshift. 
+Run the following [`copy`](http://docs.aws.amazon.com/redshift/latest/dg/copy-parameters-data-source-s3.html) commands in Redshift.
 **Note:** _you will need to add your aws_access_key_id and aws_secret_access_key from step 1 into each of the statements_
 
 ```
@@ -220,6 +220,12 @@ REGION 'us-east-1'
 IGNOREHEADER as 1
 CSV;
 ```
+
+### Step 4: Add LookML files to your Looker project
+
+
+
+
 
 
 
