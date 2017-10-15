@@ -3,13 +3,14 @@
 These instructions are for uploading the ACS dataset into your Redshift database. Note: _if you already have an AWS IAM user with the proper policy you may skip step 1._
 
 **Overall Steps:**
-1. In AWS console, apply our policy to your IAM user and grab the IAM access key ID and secret access key (this will be used for the [`copy`](http://docs.aws.amazon.com/redshift/latest/dg/copy-parameters-data-source-s3.html) command in step 4)
+[1.](#step1) In AWS console, apply our policy to your IAM user and grab the IAM access key ID and secret access key (this will be used for the [`copy`](http://docs.aws.amazon.com/redshift/latest/dg/copy-parameters-data-source-s3.html) command in step 4)
 2. Create tables in Redshift
 3. Copy data to Redshift from Looker’s S3 bucket
 4. Add LookML files to your Looker project
 
 __________________________________________________________________________________________
 
+<div id="step1"></div>
 **Step 1: Add Policy to IAM User and Get Access Key**
 
 If you don't already have an IAM user with an access key and secret access key, you will need to create one in the AWS console. 
@@ -181,7 +182,8 @@ CREATE TABLE block_group_attribs(
 
 **Step 3: Copy Data to Redshift from Looker's S3 Bucket**
 
-Run the following [`copy`](http://docs.aws.amazon.com/redshift/latest/dg/copy-parameters-data-source-s3.html) commands in Redshift. **Note:** _you will need to add your aws_access_key_id and aws_secret_access_key from step 1 into each of the statements_
+Run the following [`copy`](http://docs.aws.amazon.com/redshift/latest/dg/copy-parameters-data-source-s3.html) commands in Redshift. 
+**Note:** _you will need to add your aws_access_key_id and aws_secret_access_key from step 1 into each of the statements_
 
 ```
 COPY zcta_distances
