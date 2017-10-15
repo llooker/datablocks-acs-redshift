@@ -21,6 +21,7 @@ view: rs_zcta_distances {
       type: number
       sql: ${TABLE}.mi_to_zcta5 ;;
       value_format_name: decimal_2
+      hidden: yes
     }
 
     dimension: zip1 {
@@ -30,6 +31,7 @@ view: rs_zcta_distances {
       type: zipcode
       sql: ${TABLE}.zip1 ;;
       suggestable: no
+      hidden: yes
     }
 
     dimension: zip2 {
