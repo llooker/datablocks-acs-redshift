@@ -1,4 +1,4 @@
-connection: "arielle_redshift"
+connection: "redshift"
 
 include: "*.view"
 
