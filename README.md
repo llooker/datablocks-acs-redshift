@@ -225,6 +225,7 @@ CSV;
 
 - Copy the LookML files from this repo [(or download here)](https://github.com/llooker/datablocks-acs-redshift/archive/master.zip)
 - Add the files to your Looker project (prefixed with `rs`)
+- Change the `connection` parameter in the model file to your Redshift connection
 
 ![looker](lookml_upload.gif)
 
