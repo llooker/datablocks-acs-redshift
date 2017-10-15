@@ -229,6 +229,7 @@ CSV;
 ![looker](lookml_upload.gif)
 
 
+Now you're ready to explore ACS data and combine with your other datasets!
 
 
 
