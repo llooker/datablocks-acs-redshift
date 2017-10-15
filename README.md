@@ -2,11 +2,11 @@
 
 These instructions are for uploading the ACS dataset into your Redshift database. Note: _if you already have an AWS IAM user with the proper policy you may skip step 1._
 
-**Overall Steps:**
-1. [](#step-1-add-policy-to-iam-user-and-get-access-key) In AWS console, apply our policy to your IAM user and grab the IAM access key ID and secret access key (this will be used for the [`copy`](http://docs.aws.amazon.com/redshift/latest/dg/copy-parameters-data-source-s3.html) command in step 4)
-2. Create tables in Redshift
-3. Copy data to Redshift from Looker’s S3 bucket
-4. Add LookML files to your Looker project
+### Overall Steps:
+1. [jump](#step-1-add-policy-to-iam-user-and-get-access-key) In AWS console, apply our policy to your IAM user and grab the IAM access key ID and secret access key (this will be used for the [`copy`](http://docs.aws.amazon.com/redshift/latest/dg/copy-parameters-data-source-s3.html) command in step 4)
+2. [jump]() Create tables in Redshift
+3. [jump]() Copy data to Redshift from Looker’s S3 bucket
+4. [jump]() Add LookML files to your Looker project
 
 __________________________________________________________________________________________
 
@@ -46,7 +46,7 @@ You can copy the policy directly from here:
 ![iam](aws_looker_policy.png)
 
 
-**Step 2: Create Tables in Redshift**
+### Step 2: Create Tables in Redshift
 
 Run the following [`create table`](http://docs.aws.amazon.com/redshift/latest/dg/r_CREATE_TABLE_NEW.html) commands in Redshift.
 
@@ -179,7 +179,7 @@ CREATE TABLE block_group_attribs(
 );
 ```
 
-**Step 3: Copy Data to Redshift from Looker's S3 Bucket**
+### Step 3: Copy Data to Redshift from Looker's S3 Bucket
 
 Run the following [`copy`](http://docs.aws.amazon.com/redshift/latest/dg/copy-parameters-data-source-s3.html) commands in Redshift. 
 **Note:** _you will need to add your aws_access_key_id and aws_secret_access_key from step 1 into each of the statements_
