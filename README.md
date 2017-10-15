@@ -10,8 +10,7 @@ These instructions are for uploading the ACS dataset into your Redshift database
 
 __________________________________________________________________________________________
 
-<div id="step1"></div>
-**Step 1: Add Policy to IAM User and Get Access Key**
+### Step 1: Add Policy to IAM User and Get Access Key
 
 If you don't already have an IAM user with an access key and secret access key, you will need to create one in the AWS console. 
 
